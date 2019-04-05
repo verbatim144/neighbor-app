@@ -25,6 +25,10 @@ public class Neighbor {
     @Column(name = "city")
     private String city;
 
+    public Neighbor() {
+
+    }
+
     public Neighbor(String name, String surname, Integer age, Integer country, String city) {
         this.name = name;
         this.surname = surname;
