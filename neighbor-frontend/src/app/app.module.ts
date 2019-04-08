@@ -5,7 +5,10 @@ import { AppComponent } from './app.component';
 import { CreateNeighborComponent } from './create-neighbor/create-neighbor.component';
 import { NeighborDetailsComponent } from './neighbor-details/neighbor-details.component';
 import { NeighborListComponent } from './neighbor-list/neighbor-list.component';
-import { SearchNeighborComponent } from './search-neighbor/search-neighbor.component';
+import {FormsModule} from '@angular/forms';
+import {AppRoutingModule} from './app-routing.module';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   declarations: [
@@ -13,10 +16,14 @@ import { SearchNeighborComponent } from './search-neighbor/search-neighbor.compo
     CreateNeighborComponent,
     NeighborDetailsComponent,
     NeighborListComponent,
-    SearchNeighborComponent
+    UserComponent
   ],
   imports: [
-    BrowserModule
+    HttpClient,
+    BrowserModule,
+    FormsModule,
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

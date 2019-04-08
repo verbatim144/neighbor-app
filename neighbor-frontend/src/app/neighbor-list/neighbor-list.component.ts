@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {Observable} from 'rxjs';
+import {Neighbor} from '../Neighbor';
+import {NeighborService} from '../neighbor.service';
 
 @Component({
   selector: 'app-neighbor-list',
@@ -7,9 +10,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NeighborListComponent implements OnInit {
 
-  constructor() { }
+  neighbors: Observable<Neighbor[]>;
+
+  constructor(private neighborService: NeighborService) { }
 
   ngOnInit() {
+    this.reloadData();
+  }
+
+  deleteNeighbors(){
+    this.neighborService.deleteAll()
+      .subscribe(
+        data => {
+          console.log(data);
+          this.reloadData();
+        },
+        error1 => console.log('Error' + error1));
+  }
+
+  reloadData(){
+    this.neighbors = this.neighborService.getNeighborsList();
   }
 
 }

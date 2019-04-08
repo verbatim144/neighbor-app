@@ -1,3 +1,9 @@
-<p>
-  neighbor-list works!
-</p>
+<h1>Neighbors</h1>
+
+<div *ngFor="let neighbor of neighbors | async" style="width: 300px;">
+  <app-neighbor-details [neighbor]="neighbor"></app-neighbor-details>
+</div>
+
+<div>
+  <button type="button" class="button btn-danger" (click)="deleteNeighbors()"></button>
+</div>

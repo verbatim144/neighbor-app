@@ -1,3 +1,19 @@
-<p>
-  neighbor-details works!
-</p>
+<div *ngIf="neighbor">
+    <div>
+      <label>Name: </label>{{neighbor.name}}
+    </div>
+    <div>
+      <label>Surname: </label>{{neighbor.surname}}
+    </div>
+    <div>
+      <label>Age: </label>{{neighbor.age}}
+    </div>
+    <div>
+      <label>Country: </label>{{neighbor.country}}
+    </div>
+    <div>
+      <label>City: </label>{{neighbor.city}}
+    </div>
+
+  <span class="button is-small btn-danger" (click)="deleteNeighbor()">Delete</span>
+</div>

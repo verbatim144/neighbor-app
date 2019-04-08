@@ -16,7 +16,7 @@ export class NeighborService {
   }
 
   createNeighbor(neighbor: Object): Observable<Object> {
-    return this.http.get(`${this.baseUrl}` + '/create', neighbor);
+    return this.http.post(`${this.baseUrl}` + '/create', neighbor);
   }
 
   updateNeighbor(id: number, value: any): Observable<Object> {

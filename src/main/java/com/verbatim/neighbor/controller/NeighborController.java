@@ -11,9 +11,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-@CrossOrigin(origins = "http://localhost:4200") //enables cross-origin requests only for this specific method
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
-@RequestMapping("/api") // /api is the URI for which this controller will be used.
+@RequestMapping("/api")
 public class NeighborController {
 
     @Autowired
