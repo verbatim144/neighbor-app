@@ -7,7 +7,7 @@ import { NeighborDetailsComponent } from './neighbor-details/neighbor-details.co
 import { NeighborListComponent } from './neighbor-list/neighbor-list.component';
 import {FormsModule} from '@angular/forms';
 import {AppRoutingModule} from './app-routing.module';
-import {HttpClient, HttpClientModule} from '@angular/common/http';
+import { HttpClientModule} from '@angular/common/http';
 import { UserComponent } from './user/user.component';
 
 @NgModule({
@@ -19,11 +19,10 @@ import { UserComponent } from './user/user.component';
     UserComponent
   ],
   imports: [
-    HttpClient,
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
