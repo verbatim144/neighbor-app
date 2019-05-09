@@ -9,6 +9,7 @@ import {FormsModule} from '@angular/forms';
 import {AppRoutingModule} from './app-routing.module';
 import { HttpClientModule} from '@angular/common/http';
 import { UserComponent } from './user/user.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { UserComponent } from './user/user.component';
     CreateNeighborComponent,
     NeighborDetailsComponent,
     NeighborListComponent,
-    UserComponent
+    UserComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
