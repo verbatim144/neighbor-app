@@ -13,6 +13,15 @@ body{
   overflow: hidden;
 }
 
+.navbar{
+  filter: opacity(80%);
+}
+
+.navbar-brand{
+ margin-left: auto;
+  margin-right: auto;
+}
+
 .container {
   display: flex;
   align-items: center;
@@ -40,49 +49,54 @@ body{
   transform: translateY(-35%);
 }
 
-.btn{
-  border: 1px solid #3498db;
-  background: none;
-  padding: 10px 20px;
-  font-size: 20px;
-  font-family: "SansSerif";
-  cursor: pointer;
-  transition: 0.8s;
-  position: absolute;
-  overflow: hidden;
-  top: 60%;
-  -ms-transform: translateY(-40%);
-  transform: translateY(-40%);
-}
 .button-search{
-  color: #3498db;
-
-}
-.button-search:hover{
-  color: #ff003d;
-}
-
-.button-search::before{
-  content:"";
+  border-radius: 6px;
+  background-color: #246edb;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 19px;
+  width:  140px;
+  height: 46px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
   position: absolute;
-  left: 0;
-  width: 100%;
-  height: 0%;
-  background: #3498db;
-  z-index: -1;
-  transition: 0.8ms;
+  top: 57%;
+  filter: opacity(90%);
 }
 
-.button-search::before{
+.button-search span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button-search span:after{
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
   top: 0;
-  border-radius: 0 0 50% 50%;
+  right: -20px;
+  transition: 0.5s;
+
 }
 
-.button-search:hover::before{
-  height: 180%;
+.button-search:hover span{
+  padding-right: 25px;
 }
 
+.button-search:hover span:after{
+  opacity: 1;
+  right: 0;
 
+}
+
+.button-search:hover {
+  background-color: #8392ff;
+  transition: 0.8s;
+}
 
 
 
