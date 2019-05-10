@@ -20,12 +20,33 @@ body{
 .navbar-brand{
  margin-left: auto;
   margin-right: auto;
+  font-family: 'Rock Salt', cursive;
+  font-size: 21px;
 }
 
 .container {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.title{
+  position: absolute;
+  text-align: center;
+  font-size: 50px;
+  top: 17%;
+  color: white;
+  font-family: 'Cinzel', serif;
+}
+
+.img-location{
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 40%;
+  width: 68px; height: 70px;
+  -ms-transform: translateY(-40%);
+  transform: translateY(-40%);
 }
 
 .input-country{
@@ -35,19 +56,16 @@ body{
   border: none;
   border-radius: 5px;
   width: 400px;
-  margin-left: 10px;
+
   position: absolute;
-  top: 50%;
+  top: 53%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  font-family: 'Cairo', sans-serif;
+  color: #4b4b4b;
+  font-size: 18px;
 }
 
-.img-location{
-  position: absolute;
-  top: 35%;
-  -ms-transform: translateY(-35%);
-  transform: translateY(-35%);
-}
 
 .button-search{
   border-radius: 6px;
@@ -62,8 +80,9 @@ body{
   cursor: pointer;
   margin: 5px;
   position: absolute;
-  top: 57%;
+  top: 60%;
   filter: opacity(90%);
+  font-family: 'Cairo', sans-serif;
 }
 
 .button-search span {
@@ -94,9 +113,48 @@ body{
 }
 
 .button-search:hover {
-  background-color: #8392ff;
+  background-color: #6985ff;
   transition: 0.8s;
 }
 
 
 
+@media only screen and (max-width: 750px) {
+  .title{
+    font-size: 35px;
+  }
+
+}
+
+@media only screen and (max-width: 500px){
+  .input-country{
+    width: 280px;
+  }
+  .button-search{
+    width:  120px;
+    height: 42px;
+  }
+}
+
+@media only screen and (max-width: 380px){
+  .title{
+    font-size: 25px;
+  }
+  .img-location{
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 50px;
+    height: 52px;
+  }
+
+  .button-search{
+    width:  110px;
+    height: 42px;
+    font-size: 18px;
+  }
+
+  .input-country{
+    width: 250px;
+    height: 35px;
+  }
+}
