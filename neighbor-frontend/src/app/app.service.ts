@@ -10,9 +10,4 @@ const httpOptions = {
 export class UserService {
   constructor(private http: HttpClient) {}
 
-  private userUrl = 'http://localhost:8080';
-
-  public getUsers(): Observable<any> {
-    return this.http.get(this.userUrl + '/users');
-  }
 }

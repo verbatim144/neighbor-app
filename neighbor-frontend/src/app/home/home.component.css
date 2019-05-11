@@ -2,27 +2,22 @@ body{
   background:
     linear-gradient(
       90deg,
-      rgba(107, 121, 204, 0.62),
+      rgba(107, 121, 204, 0.4),
       rgba(134, 163, 224, 0.4)
     ),
-    url("../../assets/background-home.jpeg");
+    url("../../assets/background.jpg");
   height: 100vh;
   width: 100%;
   background-size: cover;
   background-position: center;
   overflow: hidden;
+
 }
 
 .navbar{
-  filter: opacity(80%);
+ background-color: rgba(11, 15, 52, 0.29);
 }
 
-.navbar-brand{
- margin-left: auto;
-  margin-right: auto;
-  font-family: 'Rock Salt', cursive;
-  font-size: 21px;
-}
 
 .container {
   display: flex;
@@ -33,32 +28,32 @@ body{
 .title{
   position: absolute;
   text-align: center;
-  font-size: 50px;
+  font-size: 65px;
   top: 17%;
   color: white;
-  font-family: 'Cinzel', serif;
+  font-family: 'Oleo Script', cursive;
 }
 
-.img-location{
+
+.houses-logo{
   position: absolute;
+  width: 115px;
+  height: 87px;
+  top:32%;
   margin-left: auto;
   margin-right: auto;
-  top: 40%;
-  width: 68px; height: 70px;
-  -ms-transform: translateY(-40%);
-  transform: translateY(-40%);
+
 }
 
 .input-country{
   padding-left: 5px;
-  filter: opacity(93%);
+  filter: opacity(70%);
   height: 40px;
   border: none;
   border-radius: 5px;
   width: 400px;
-
   position: absolute;
-  top: 53%;
+  top: 40%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   font-family: 'Cairo', sans-serif;
@@ -80,8 +75,8 @@ body{
   cursor: pointer;
   margin: 5px;
   position: absolute;
-  top: 60%;
-  filter: opacity(90%);
+  top: 47%;
+  filter: opacity(70%);
   font-family: 'Cairo', sans-serif;
 }
 
