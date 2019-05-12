@@ -53,7 +53,7 @@ body{
   border-radius: 5px;
   width: 400px;
   position: absolute;
-  top: 40%;
+  top: 45%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   font-family: 'Cairo', sans-serif;
@@ -75,7 +75,7 @@ body{
   cursor: pointer;
   margin: 5px;
   position: absolute;
-  top: 47%;
+  top: 52%;
   filter: opacity(70%);
   font-family: 'Cairo', sans-serif;
 }
