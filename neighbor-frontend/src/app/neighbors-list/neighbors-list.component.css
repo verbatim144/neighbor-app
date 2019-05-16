@@ -1,0 +1,31 @@
+section .img {
+  padding-top: 50px;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(107, 121, 204, 0.4), rgba(134, 163, 224, 0.4)), url("../../assets/background-list.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section .img .card {
+  font-family: "Questrial", sans-serif;
+  filter: opacity(90%);
+  margin-top: 30px;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+section .img .card .card-header {
+  font-size: 20px;
+}
+section .img .card .card-body img {
+  width: 128px;
+  height: 128px;
+  margin-top: 70px;
+  margin-left: 10px;
+}
+section .img .card .card-body blockquote {
+  font-size: 19px;
+}
+
+/*# sourceMappingURL=neighbors-list.component.css.map */
