@@ -1,0 +1,168 @@
+section{
+  background:
+    linear-gradient(
+        90deg,
+        rgba(107, 121, 204, 0.4),
+        rgba(134, 163, 224, 0.4)
+    ),
+    url("../../assets/background.jpg");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    .title{
+      position: absolute;
+      text-align: center;
+      font-size: 80px;
+      top: 17%;
+      color: white;
+      font-family: 'Oleo Script', cursive;
+    }
+
+
+    .input-country{
+      outline: none;
+      padding-left: 5px;
+      filter: opacity(60%);
+      height: 43px;
+      border: none;
+      border-radius: 15px;
+      width: 500px;
+      position: absolute;
+      top: 45%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      font-family: 'Cairo', sans-serif;
+      color: #4b4b4b;
+      font-size: 18px;
+    }
+
+
+
+
+
+    .button-search{
+      outline: none;
+      border-radius: 20px;
+      background-color: #246edb;
+      border: none;
+      color: white;
+      text-align: center;
+      font-size: 19px;
+      width:  170px;
+      height: 42px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+      position: absolute;
+      top: 52%;
+      filter: opacity(70%);
+      font-family: 'Cairo', sans-serif;
+    }
+
+    .button-search span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+
+    .button-search span:after{
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+
+    }
+
+    .button-search:hover span{
+      padding-right: 25px;
+    }
+
+    .button-search:hover span:after{
+      opacity: 1;
+      right: 0;
+
+    }
+
+    .button-search:hover {
+      background-color: #569bf0;
+      transition: 0.8s;
+    }
+
+  }
+
+
+
+  }
+
+
+
+
+
+@media only screen and (max-width: 750px) {
+
+  section{
+    .container{
+      .title{
+        font-size: 35px;
+      }
+    }
+  }
+
+
+}
+
+@media only screen and (max-width: 500px) {
+
+  section {
+    .container {
+      .input-country {
+        width: 280px;
+      }
+      .button-search {
+        width: 120px;
+        height: 42px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 380px){
+
+  section{
+    .container{
+      .title{
+        font-size: 25px;
+      }
+      .img-location{
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        width: 50px;
+        height: 52px;
+      }
+
+      .button-search{
+        width:  110px;
+        height: 42px;
+        font-size: 18px;
+      }
+
+      .input-country{
+        width: 250px;
+        height: 35px;
+      }
+    }
+  }
+
+}
